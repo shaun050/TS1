@@ -52,6 +52,10 @@
 => Accordion
 
 /*------------------------------------------------------------------*/
+body {
+  background: linear-gradient(to right, #0f0c29, #141132, #24243e) !important;
+}
+
 @font-face {
   font-family: "Articulat";
   src: url("../fonts/ArticulatCF-ExtraBold.eot");
@@ -2772,7 +2776,7 @@ label.error {
   margin-top: 80px;
   margin-left: 40px;
   margin-right: 40px;
-  background: #000;
+  background: linear-gradient(to right, #0f0c29, #1b1742, #24243e)
   border-radius: 64px 64px 0px 0px;
 }
 .marqee-wrap {
@@ -4187,7 +4191,7 @@ swiper-slide{
   color: #fff;
 }
 .card:hover {
-  box-shadow: 0 0 20px #2217fb;
+  box-shadow: 0 0 20px #c8c5fc;
 }
 
 .card-txt {
@@ -4196,7 +4200,7 @@ swiper-slide{
   position: relative;
 }
 .flip-card-front {
-  background: linear-gradient(135deg, #11004d, #1b006a);
+  background: linear-gradient(135deg, #ffffff, #6751a8);
   color: #fff;
   display: flex;
   align-items: center;
@@ -5718,7 +5722,7 @@ gsap.from(".card", {
   inset: -3px;
   border-radius: 32px;
   z-index: -1;
-  background: conic-gradient(from var(--angle), #0c63e7, #060c21, #d11149, #060c21, #0c63e7);
+  background: conic-gradient(from var(--angle), #f4cf00, #060c21, #d11149, #060c21, #f4cf00);
 }
 
 .glow-wrapper::after {
@@ -5852,12 +5856,18 @@ gsap.from(".card", {
 
 /* Back face styling */
 .flip-card-back {
-  background: linear-gradient(160deg, #0A1F44, #00C6FF);
+  background:linear-gradient(145deg, rgba(160, 170, 255, 0.85), rgba(100, 110, 200, 0.85))
+;
 
-  transform: rotateY(180deg);
-  padding: 30px 24px;
-  color: var(--white);
-  box-sizing: border-box;
+
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card {
   backdrop-filter: blur(10px);
